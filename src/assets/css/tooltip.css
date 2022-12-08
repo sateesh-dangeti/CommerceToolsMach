@@ -1,0 +1,78 @@
+.Tooltip-Wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.Tooltip-Wrapper img {
+  cursor: pointer;
+}
+
+.Tooltip-Wrapper .Tooltip-top {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.Tooltip-Wrapper .Tooltip-top::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.Tooltip-Wrapper:hover .Tooltip-top {
+  visibility: visible;
+}
+
+/* devtools tooltip for copy icon */
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  left: 25rem;
+}
+.tooltip-copy img {
+  cursor: pointer;
+}
+
+.tooltip-copy .tooltip-top-copy {
+  visibility: hidden;
+  width: 88px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  left: 1.3rem;
+}
+.tooltip-copy .tooltip-top-copy::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip-copy:hover .tooltip-top-copy {
+  visibility: visible;
+}
